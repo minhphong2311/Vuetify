@@ -2,7 +2,7 @@
   <v-content>
     <v-container class="fill-height" fluid>
       <v-row align="center" justify="center">
-        <v-col cols="12" md="7">
+        <v-col cols="12" md="12">
 
 
           Dashboard
@@ -15,9 +15,5 @@
   </v-content>
 </template>
 <script>
-export default {
-  data: () => ({
-    visible: false,
-  }),
-}
+
 </script>

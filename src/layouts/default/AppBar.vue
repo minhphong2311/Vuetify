@@ -1,13 +1,28 @@
 <template>
-  <v-app-bar flat>
-    <v-app-bar-title>
-      <v-icon icon="mdi-circle-slice-4" />
+  <v-app-bar :elevation="2">
+    <v-btn class="text-none" stacked @click.stop="drawer = !drawer">
+      <v-icon>mdi-menu</v-icon>
+    </v-btn>
 
-      Base Preset
-    </v-app-bar-title>
+    <template v-slot:append>
+      <v-list nav>
+        <v-list-item prepend-avatar="https://cdn.vuetifyjs.com/images/john.png" title="Supervisors"
+          value="supervisors"></v-list-item>
+      </v-list>
+      <v-btn>Link 1</v-btn>
+
+      <v-btn>Link 1</v-btn>
+    </template>
   </v-app-bar>
 </template>
 
-<script setup>
-  //
+<script>
+export default {
+  data: () => ({
+    drawer: null,
+    links: [
+      { icon: 'dashboard', text: 'dashboard', route: '/' }
+    ]
+  })
+}
 </script>

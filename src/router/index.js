@@ -1,32 +1,53 @@
 // Composables
 import { createRouter, createWebHistory } from 'vue-router'
+import Default from '../layouts/default/Default.vue'
+import Login from '../views/Login.vue'
+import Dashboard from '../views/Dashboard.vue'
+import Menu01 from '../views/Menu01.vue'
+import Menu02 from '../views/Menu02.vue'
 
 const routes = [
   {
     path: '/',
-    component: () => import('@/layouts/default/Default.vue'),
+    component: () => Default,
     children: [
       {
         path: '',
-        name: 'Home',
-        // route level code-splitting
-        // this generates a separate chunk (Home-[hash].js) for this route
-        // which is lazy-loaded when the route is visited.
-        component: () => import('@/views/Home.vue'),
+        name: 'Dashboard',
+        component: Dashboard,
+      }
+    ],
+  },
+  {
+    path: '/menu01',
+    component: () => Default,
+    children: [
+      {
+        path: '',
+        name: 'Menu01',
+        component: () => Menu01,
+      },
+    ],
+  },
+  {
+    path: '/menu02',
+    component: () => Default,
+    children: [
+      {
+        path: '',
+        name: 'Menu02',
+        component: () => Menu02,
       },
     ],
   },
   {
     path: '/login',
-    component: () => import('@/layouts/default/Default.vue'),
+    // component: () => Default,
     children: [
       {
         path: '',
         name: 'Login',
-        // route level code-splitting
-        // this generates a separate chunk (Home-[hash].js) for this route
-        // which is lazy-loaded when the route is visited.
-        component: () => import('@/views/Login.vue'),
+        component: () => Login,
       },
     ],
   },

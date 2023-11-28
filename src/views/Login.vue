@@ -4,7 +4,6 @@
       <v-row align="center" justify="center">
         <v-col cols="12" md="7">
 
-
           <v-card elevation="12">
             <v-form v-model="form" @submit.prevent="onSubmit">
               <v-container class="pa-5 pa-md-16">
