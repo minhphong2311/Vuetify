@@ -24,7 +24,7 @@
                     <v-img class="mx-auto" max-width="128" src="https://cdn.vuetifyjs.com/images/john.png"></v-img>
                   </v-avatar>
                   <h3 class="mb-5">Supervisors</h3>
-                  <v-btn variant="plain">
+                  <v-btn variant="plain" :to="'/login'">
                     Logout
                   </v-btn>
                 </div>
@@ -46,7 +46,7 @@
               </v-list>
               <v-btn>Link 1</v-btn>
 
-              <v-btn>Link 1</v-btn>
+              <v-btn :to="'/login'">Logout</v-btn>
             </template>
           </v-app-bar>
           <default-view />
