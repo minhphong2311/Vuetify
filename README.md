@@ -4,7 +4,7 @@
 
 ```
 # Nodejs
-Node >v16.17.0
+Node >16.17.0
 
 # yarn
 yarn
