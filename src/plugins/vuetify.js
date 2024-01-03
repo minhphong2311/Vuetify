@@ -7,6 +7,11 @@
 // Styles
 import '@mdi/font/css/materialdesignicons.css'
 import 'vuetify/styles'
+import '@/styles/common.scss';
+import '@/styles/header.scss';
+import '@/styles/footer.scss';
+import '@/styles/sub.scss';
+import '@/styles/home/main-visual.scss';
 
 // Composables
 import { createVuetify } from 'vuetify'

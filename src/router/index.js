@@ -1,10 +1,12 @@
 // Composables
 import { createRouter, createWebHistory } from 'vue-router'
 import Default from '../layouts/default/Default.vue'
+import Sub from '../layouts/default/Sub.vue'
 import Login from '../views/Login.vue'
-import Dashboard from '../views/Dashboard.vue'
+import Home from '../views/home.vue'
 import Menu01 from '../views/Menu01.vue'
 import Menu02 from '../views/Menu02.vue'
+import Menu03 from '../views/Menu03.vue'
 
 const routes = [
   {
@@ -13,14 +15,14 @@ const routes = [
     children: [
       {
         path: '',
-        name: 'Dashboard',
-        component: Dashboard,
+        name: 'Home',
+        component: Home,
       }
     ],
   },
   {
     path: '/menu01',
-    component: () => Default,
+    component: () => Sub,
     children: [
       {
         path: '',
@@ -31,12 +33,23 @@ const routes = [
   },
   {
     path: '/menu02',
-    component: () => Default,
+    component: () => Sub,
     children: [
       {
         path: '',
         name: 'Menu02',
         component: () => Menu02,
+      },
+    ],
+  },
+  {
+    path: '/menu03',
+    component: () => Sub,
+    children: [
+      {
+        path: '',
+        name: 'Menu03',
+        component: () => Menu03,
       },
     ],
   },
