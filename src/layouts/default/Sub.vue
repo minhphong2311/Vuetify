@@ -12,7 +12,7 @@
             <v-list-item prepend-icon="mdi-star" title="Menu03" value="/menu03" :to="'/menu03'"></v-list-item>
           </v-list>
         </div>
-        <div class="content-wrap">
+        <div class="sub-container">
           <DefaultView />
         </div>
 

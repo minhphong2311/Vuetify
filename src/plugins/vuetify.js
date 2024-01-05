@@ -7,7 +7,9 @@
 // Styles
 import '@mdi/font/css/materialdesignicons.css'
 import 'vuetify/styles'
+import '@/styles/fonts.scss';
 import '@/styles/common.scss';
+import '@/styles/table.scss';
 import '@/styles/header.scss';
 import '@/styles/footer.scss';
 import '@/styles/sub.scss';

@@ -1,0 +1,44 @@
+/* table */
+.table-wrap{overflow:hidden;}
+.table{width:100%;border-top:3px solid #004E89;border-spacing:0;border-collapse:separate;text-align:center;table-layout:fixed;}
+.table.no-border{border-top:1px solid #DDD;}
+.table th{padding:12px 10px 13px;border-bottom:1px solid #dedede;font-weight:500;font-size:18px;color:#000;line-height:26px;letter-spacing:-0.18px;word-wrap:break-word;}
+.table thead th{background: rgba(0, 0, 0, 0.04);}
+.table tbody th{background: rgba(0, 0, 0, 0.04);}
+.table td{padding:12px 10px 13px;border-bottom:1px solid #dedede;font-size:16px;font-weight:350;color:#000;line-height:26px;word-wrap:break-word;letter-spacing:-0.16px;}
+.table td.td-left{text-align:left !important;padding: 12px 40px 13px;}
+.table td.no-bottom{border-bottom:none !important;}
+.table th.no-right,
+.table td.no-right{border-right:none !important;}
+.table td span{color:#2d68c2;}
+
+.table-status {padding: 6px 12px;color: #fff !important;border-radius: 4px;display: inline-block;}
+.table-status.waiting {background: #00B2A5;}
+.table-status.complete {background: #004E89;}
+.table-status.cancel {background: #DDD;color: #666 !important;}
+.table-status.companion {background: #94693B;}
+
+/* scrollbox */
+.msg-touch-help{display:none;}
+
+
+@media screen and (max-width:1024px) {
+	.table-status.waiting {text-align: center;padding: 0 8px 0 9px!important;}
+	.table-status.complete {text-align: center;padding: 0 8px 0 9px!important;}
+	.table-status.cancel {text-align: center;padding: 0 8px 0 9px!important;}
+	.table-status.companion {text-align: center;padding: 0 8px 0 9px!important;}	
+}
+@media screen and (max-width:768px) {
+	
+	.table th{padding:7px;font-size:14px;line-height:22px;}
+	.table td{padding:7px;font-size:14px;line-height:22px;}
+	.table td.td-left{padding-left:7px;}
+
+	/* scrollbox */
+	.scrollbox{position:relative;width:100%;overflow-x:auto;overflow-y:hidden;padding: 0 0 40px 0;}
+	.scrollbox .table{width:800px;}
+	.msg-touch-help{display:block;position:absolute;top:50px;left:50%;z-index:10;margin:0 0 0 -35px;width:70px;height:70px;}
+	.msg-touch-help img {width:100%;}
+	
+	
+}

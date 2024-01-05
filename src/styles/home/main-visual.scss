@@ -2,7 +2,15 @@
     background: url('https://gdvplatform.or.kr/img/main_content1_background.a851f1e6.svg') no-repeat;
     min-height: 500px;
     text-align: center;
-    padding: 40px 0 0;
+    padding: 0;
+    position: relative;
+    .main-visual-txt{
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
     .main-visual-tit{
         font-size: 40px;
         font-weight: 700;

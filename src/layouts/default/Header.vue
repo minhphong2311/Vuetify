@@ -3,7 +3,9 @@
         <div class="top-header-wrap">
             <div class="top-header-box">
                 <div class="top-header-left">
-                    <h1><router-link to="/"><img v-bind:src="'https://gdvplatform.or.kr/img/main_logo2-1.527ae773.svg'" /> </router-link></h1>
+                    <h1><router-link to="/">
+                    <img src="@/assets/images/logo.svg" />
+                    </router-link></h1>
                 </div>
                 <div class="top-header-right">
                     <v-btn :to="'/login'">로그인</v-btn>
