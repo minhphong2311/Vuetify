@@ -1,11 +1,13 @@
 # base
 
-## Project setup
-
+## 개발 환경 구축
+> Development Environment
 ```
 # Nodejs
-Node >v16.17.0
+Node >16.17.0
 
+## Project setup
+```
 # yarn
 yarn
 
