@@ -5,9 +5,9 @@
 ```
 # Nodejs
 Node >16.17.0
+```
 
 ## Project setup
-```
 # yarn
 yarn
 
